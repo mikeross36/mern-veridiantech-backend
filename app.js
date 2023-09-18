@@ -16,11 +16,11 @@ app.use(
     origin: ["https://veridiantech.onrender.com", "http://127.0.0.1:5173"],
     methods: ["GET", "POST", "PATCH", "DELETE"],
     allowedHeaders: [
-      "Acces-Control-Allow-Origin",
+      "Access-Control-Allow-Origin",
       "Content-Type",
       "Authorization",
     ],
-    setcredentials: true,
+    credentials: true,
   })
 );
 app.use(express.json());
