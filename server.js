@@ -8,8 +8,6 @@ const app = require("./app");
 
 mongoose.set("strictQuery", false);
 
-const DB = process.env.DATABASE_URI;
-
 mongoose.connect(DB).then(() => console.log("Database connected..."));
 
 const port = process.env.PORT || 5000;
