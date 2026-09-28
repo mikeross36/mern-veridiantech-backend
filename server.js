@@ -8,8 +8,8 @@ const app = require("./app");
 
 mongoose.set("strictQuery", false);
 
-mongoose.connect(DB).then(() => console.log("Database connected..."));
+// mongoose.connect(DB).then(() => console.log("Database connected..."));
 
 const port = process.env.PORT || 5000;
 
-app.listen(port, () => console.log(`Server is running on port ${port}...`));
+// app.listen(port, () => console.log(`Server is running on port ${port}...`));
